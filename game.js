@@ -171,11 +171,10 @@ class LevelParser {
   obstacleFromSymbol(letter) {
     if (letter === 'x') {
       return 'wall';
-    } else if (letter === '!') {
+    }  
+    if (letter === '!') {
       return 'lava';
-    } else {
-      return 'undefind';
-    }
+    } 
   }
 
   createGrid(plan) {
