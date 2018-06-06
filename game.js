@@ -252,7 +252,7 @@ class FireRain extends Fireball {
   }
 
   handleObstacle() {
-    this.position = this.startPosition;
+    this.pos = this.startPosition;
   }
 }
 
