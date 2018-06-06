@@ -211,7 +211,7 @@ class Fireball extends Actor {
   }
 
   getNextPosition(time = 1) {
-    return this.position.plus(this.speed.times(time));
+    return this.pos.plus(this.speed.times(time));
   }
 
   handleObstacle() {
@@ -223,7 +223,7 @@ class Fireball extends Actor {
     if (level.obstacleAt(nextPos, this.size)) {
       this.handleObstacle();
     } else {
-      this.pos = nextPos;
+      this.pos = nextPos
     }
   }
 }
