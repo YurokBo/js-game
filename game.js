@@ -284,7 +284,7 @@ class Coin extends Actor {
   }
 
   act(time) {
-    this.pos = getNextPosition(time);
+    this.pos = this.getNextPosition(time);
   }
 }
 
